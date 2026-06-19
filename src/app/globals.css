@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-navy-950: #080f1a;
+  --color-navy-900: #0d1b2a;
+  --color-navy-800: #132238;
+  --color-navy-700: #1a2f4a;
+  --color-navy-600: #22405f;
+  --color-navy-100: #dce8f5;
+  --color-navy-50:  #f0f6fc;
+
+  --color-gold-600: #a87730;
+  --color-gold-500: #c9963e;
+  --color-gold-400: #d4a847;
+  --color-gold-300: #e2bf72;
+  --color-gold-100: #fdf3dc;
+  --color-gold-50:  #fffbf0;
+
+  --color-parchment: #faf9f6;
+  --color-parchment-dark: #f0ede6;
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+
+  --color-background: var(--color-parchment);
+  --color-foreground: var(--color-navy-900);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #faf9f6;
+  --foreground: #0d1b2a;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for document preview */
+.preview-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.preview-scroll::-webkit-scrollbar-track {
+  background: #f0ede6;
+}
+.preview-scroll::-webkit-scrollbar-thumb {
+  background: #c9963e;
+  border-radius: 3px;
+}
+
+/* Document preview typography */
+.document-text {
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.8;
+  white-space: pre-wrap;
 }
