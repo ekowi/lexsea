@@ -5,8 +5,8 @@
 
 LexSEA is a self-serve legal-document platform covering **both** Indonesian and Singaporean law in one place — the way most Southeast Asian startups actually operate. Pick a document, answer plain-language questions, and download a clean, citation-backed PDF.
 
-**Live demo:** _<add your Vercel URL>_
-**Demo video:** _<add your Loom/YouTube link>_
+**Live demo:** https://lexsea.vercel.app
+**Demo video:** _<add your YouTube link>_
 
 ---
 
