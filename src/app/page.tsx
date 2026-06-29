@@ -7,7 +7,7 @@ const DOCUMENTS = [
     slug: "nda",
     title: "Non-Disclosure Agreement",
     subtitle: "Mutual · Bilateral",
-    law: "UU 30/2000 · CIA 2023",
+    law: "UU 30/2000 · SG Common Law",
     description:
       "Mutual confidentiality obligations, carve-outs for public information, BANI arbitration clause (ID) or SIAC (SG).",
     time: "~3 min",
@@ -268,7 +268,7 @@ export default function HomePage() {
               <div className="space-y-4">
                 {[
                   { doc: "NDA — Indonesia", law: "UU No. 30/2000 Rahasia Dagang", clauses: "8 clauses", arb: "BANI, Jakarta" },
-                  { doc: "NDA — Singapore", law: "Confidential Information Act 2023", clauses: "8 clauses", arb: "SIAC, Singapore" },
+                  { doc: "NDA — Singapore", law: "Common law of confidence", clauses: "8 clauses", arb: "SIAC, Singapore" },
                   { doc: "Employment — Indonesia", law: "UU No. 13/2003 Ketenagakerjaan", clauses: "11 clauses", arb: "PHI Court" },
                   { doc: "Employment — Singapore", law: "Employment Act 1968 (Cap. 91A)", clauses: "10 clauses", arb: "MOM / TADM" },
                 ].map((row) => (
